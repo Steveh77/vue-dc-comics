@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <MyHeader />
+    <MyJumbo />
     <MainPart1 />
     <MainPart2 />
     <FooterPart1 />
@@ -14,6 +15,7 @@ import MainPart1 from './components/MainPart1.vue';
 import MainPart2 from './components/MainPart2.vue';
 import FooterPart1 from './components/FooterPart1.vue';
 import FooterPart2 from './components/FooterPart2.vue';
+import MyJumbo from './components/MyJumbo.vue';
 
 
 export default {
@@ -23,7 +25,8 @@ export default {
     MainPart1,
     MainPart2,
     FooterPart1,
-    FooterPart2
+    FooterPart2,
+    MyJumbo
 }
 }
 </script>
