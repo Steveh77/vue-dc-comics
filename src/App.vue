@@ -2,7 +2,7 @@
   <div id="app">
     <MyHeader />
     <MyJumbo />
-    <MainPart1 />
+    <MainPart1 :cards="cards" />
     <MainPart2 />
     <FooterPart1 />
     <FooterPart2 />
@@ -16,6 +16,7 @@ import MainPart2 from './components/MainPart2.vue';
 import FooterPart1 from './components/FooterPart1.vue';
 import FooterPart2 from './components/FooterPart2.vue';
 import MyJumbo from './components/MyJumbo.vue';
+import CardJson from './assets/dc-comics.json';
 
 
 export default {
@@ -27,7 +28,12 @@ export default {
     FooterPart1,
     FooterPart2,
     MyJumbo
-}
+},
+data() {
+  return {
+    cards:CardJson
+  }
+},
 }
 </script>
 

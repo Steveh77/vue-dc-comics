@@ -15,13 +15,11 @@
 </template>
 
 <script>
-import CardJson from '../assets/dc-comics.json'
+
 export default {
-data() {
-  return {
-    cards:CardJson
-  }
-},
+props: {
+  cards: Array
+}
 }
 </script>
 
